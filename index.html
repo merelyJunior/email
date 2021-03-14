@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+      }
+      @font-face {
+        font-family: SF-Pro-Display;
+        src: url(./font/SF-Pro-Display-Regular.otf);
+      }
+
+      [style*="Arial"] {
+        font-family: "Arial", Open Sans, sans-serif !important;
+      }
+      * {
+        font-family: "Arial", Open Sans, sans-serif;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      table td {
+        border-collapse: collapse;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      .prew-link {
+        font-size: 12px;
+        color: #929292 !important;
+        text-decoration: underline;
+      }
+      .title,
+      .subtitle {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      .name {
+        font-size: 20px;
+        line-height: 30px;
+        color: #979797;
+      }
+      .value {
+        font-size: 20px;
+      }
+      .cta {
+        padding: 20px 35px;
+        background: #9c27b0;
+        border-radius: 30px;
+        color: #ffffff !important;
+        font-family: SF-Pro-Display;
+        font-size: 15px;
+      }
+      .footer {
+        padding: 30px;
+        background-color: #f3f5fe;
+        border-radius: 20px;
+      }
+      .footer-title {
+        font-size: 22px;
+      }
+      .footer-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .secondary-cta {
+        padding: 20px;
+        border: 1px solid #9c27b0;
+        border-radius: 30px;
+        color: #9c27b0 !important;
+        width: 135px !important;
+        display: inline-block;
+        font-family: SF-Pro-Display;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <table cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td>
+          <!-- Хедер -->
+
+          <table cellpadding="0" cellspacing="0" width="700" align="center">
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td width="30%">
+                <img src="./img/logo.png" alt="All Right logo" />
+              </td>
+              <td width="70%" align="right">
+                <a href="#" class="prew-link">Веб-версия</a>
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td width="100%" align="center" colspan="2">
+                <img src="./img/header-img.png" alt="header img" />
+              </td>
+            </tr>
+          </table>
+
+          <!-- Контент -->
+
+          <table cellpadding="0" cellspacing="0" width="600" align="center">
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <b class="title">Ваш платеж прошел успешно!</b>
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td class="subtitle" colspan="2">
+                Это значит, что вы стали на шаг ближе к идеальному английскому!
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td class="name" width="150">Сумма:</td>
+              <td class="value" colspan="2">{{ params.SUMM }}</td>
+            </tr>
+            <tr>
+              <td class="name" width="150">Назначение:</td>
+              <td class="value" colspan="2">{{ params.DESCRIPTION }}</td>
+            </tr>
+          </table>
+
+          <!-- Призыв к действию -->
+
+          <table cellpadding="0" cellspacing="0" width="600" align="center">
+            <tr width="100%" height="60">
+              <td></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <a href="#" class="cta">Забронировать урок</a>
+              </td>
+            </tr>
+            <tr width="100%" height="90">
+              <td></td>
+            </tr>
+          </table>
+
+          <!-- Футер -->
+
+          <table
+            class="footer"
+            cellpadding="0"
+            cellspacing="0"
+            width="600"
+            align="center"
+            bgcolor="#F3F5FE"
+          >
+            <tr width="100%" height="40">
+              <td></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <b class="footer-title">Бесплатный урок за честный отзыв</b>
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td class="footer-subtitle" align="center">
+                Хотите получить бесплатное занятие для своего ребенка?<br />Нет
+                ничего проще! Поделитесь мнением об изучении английского<br />
+                в нашей школе, отправьте скрин с отзывом нашему
+                администратору<br />
+                и получите бонус в виде бесплатного урока – он будет ждать
+                вас<br />
+                в личном кабинете.Выберете один из сервисов,<br />
+                на котором хотите оставить отзыв
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  align="center"
+                >
+                  <tr>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Facebook</a>
+                    </td>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Truspilot.com</a>
+                    </td>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Otzovik.com</a>
+                    </td>
+                  </tr>
+                  <tr width="100%" height="10">
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Zoon.ru</a>
+                    </td>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Yell.ru</a>
+                    </td>
+                    <td width="180" align="center">
+                      <a href="#" class="secondary-cta">Подробнее о скидках</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr width="100%" height="30">
+              <td></td>
+            </tr>
+          </table>
+          <tr width="100%" height="200">
+            <td></td>
+          </tr>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
